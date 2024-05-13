@@ -1,0 +1,247 @@
+/* Base styles that apply to all devices */
+:root {
+  /* Font family */
+  --font-family-sans: "Figtree", sans-serif;
+
+  /* Font weight */
+  --font-weight-regular: 450;
+  --font-weight-medium: 550;
+  --font-weight-semibold: 650;
+  --font-weight-bold: 700;
+
+  /* Letter spacing */
+  --font-letter-spacing-densest: -0.54px;
+  --font-letter-spacing-denser: -0.3px;
+  --font-letter-spacing-dense: -0.2px;
+  --font-letter-spacing-normal: 0px;
+
+  /* Font size */
+  --font-size-300: 12px;
+  --font-size-325: 13px;
+  --font-size-350: 14px;
+  --font-size-400: 16px;
+  --font-size-500: 20px;
+  --font-size-600: 24px;
+  --font-size-750: 30px;
+  --font-size-900: 36px;
+
+  /* Line height */
+  --font-line-height-300: 12px;
+  --font-line-height-400: 16px;
+  --font-line-height-500: 20px;
+  --font-line-height-600: 24px;
+  --font-line-height-800: 32px;
+  --font-line-height-1000: 40px;
+  --font-line-height-1200: 48px;
+}
+
+/* CSS Reset */
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.heading-3xl {
+  font-size: var(--font-size-900);
+  line-height: var(--font-line-height-1200);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--font-letter-spacing-densest);
+  font-family: var(--font-family-sans);
+}
+
+.heading-2xl {
+  font-size: var(--font-size-750);
+  line-height: var(--font-line-height-1000);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--font-letter-spacing-denser);
+  font-family: var(--font-family-sans);
+}
+
+.heading-xl {
+  font-size: var(--font-size-600);
+  line-height: var(--font-line-height-800);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--font-letter-spacing-dense);
+  font-family: var(--font-family-sans);
+}
+
+.heading-lg {
+  font-size: var(--font-size-500);
+  line-height: var(--font-line-height-600);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: var(--font-letter-spacing-dense);
+  font-family: var(--font-family-sans);
+}
+
+.heading-md {
+  font-size: var(--font-size-350);
+  line-height: var(--font-line-height-500);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: var(--font-letter-spacing-normal);
+  font-family: var(--font-family-sans);
+}
+
+.heading-sm {
+  font-size: var(--font-size-325);
+  line-height: var(--font-line-height-500);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: var(--font-letter-spacing-normal);
+  font-family: var(--font-family-sans);
+}
+
+.body-lg {
+  font-size: var(--font-size-500);
+  line-height: var(--font-line-height-800);
+  font-weight: var(--font-weight-regular);
+  letter-spacing: var(--font-letter-spacing-normal);
+  font-family: var(--font-family-sans);
+}
+
+.body-md {
+  font-size: var(--font-size-400);
+  line-height: var(--font-line-height-600);
+  font-weight: var(--font-weight-regular);
+  letter-spacing: var(--font-letter-spacing-normal);
+  font-family: var(--font-family-sans);
+}
+
+.body-sm {
+  font-size: var(--font-size-300);
+  line-height: var(--font-line-height-500);
+  font-weight: var(--font-weight-regular);
+  letter-spacing: var(--font-letter-spacing-normal);
+  font-family: var(--font-family-sans);
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  max-width: 1200px;
+  background-color: #fff;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+section {
+  background-color: #fafafa;
+  color: #1d1d1d;
+  padding: 10px;
+}
+
+/* Mobile devices (up to 600px) */
+@media (max-width: 600px) {
+  main {
+    padding: 12px;
+    margin-top: 10px; /* Added margin */
+  }
+}
+
+/* Tablet devices (601px to 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+  main {
+    padding: 20px;
+    margin-top: 20px; /* Increased margin */
+  }
+}
+
+/* Desktop devices (over 900px) */
+@media (min-width: 901px) {
+  main {
+    padding: 40px;
+    margin-top: 30px; /* Further increased margin */
+  }
+}
